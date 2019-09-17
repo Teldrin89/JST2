@@ -1,1 +1,54 @@
 /* introduce additional formating of the web page with css */
+/* page background color */
+body{
+    background: #000000;
+}
+/* container background color and margin */
+.container{
+    background: #000000;
+    margin: 0px;
+}
+/* entry space for numbers/operators */
+.entry{
+    width: 265px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+/* calculator container style */
+.calc-container{
+    width: 300px;
+    background-color: rgb(46, 163, 189);
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* numerical buttons style */
+.numBut{
+    height: 59px;
+    width: 59px;
+    margin: 10px 4px;
+    /* when "!important" rule is declared on particular style declaration it
+    overrides any other declarations */
+    border: none !important;
+}
+.mathBut{
+    height: 59px;
+    width: 59px;
+    margin: 10px 4px;
+    /* when "!important" rule is declared on particular style declaration it
+    overrides any other declarations */
+    border: none !important;
+}
+.equalBut{
+    height: 59px;
+    width: 126px;
+    margin: 10px 4px;
+    /* when "!important" rule is declared on particular style declaration it
+    overrides any other declarations */
+    border: none !important;
+}
