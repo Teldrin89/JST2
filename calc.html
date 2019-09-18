@@ -23,10 +23,22 @@
     <div class="container text-center">
         <!-- wrapper around the whole calculator -->
         <div class="calc-container">
+          <!-- first row class -->
             <div class="row">
+                <!-- create form in first row -->
                 <form name="calc">
+                    <!-- input/output form for numbers -->
                     <input type="text" id="entry" class="entry text-right" value="0" readonly>
                 </form>
+            </div>
+            <!-- 2nd row set -->
+            <div class="row">
+              <!-- create first set of number buttons, each with id and with boostrap standard styling plus additional defined in mainstyle.css-->
+              <button id="numBut" type="button" class="btn btn-primary numBut" onclick="numButPress(7)">7</button>
+              <button id="numBut" type="button" class="btn btn-primary numBut" onclick="numButPress(8)">8</button>
+              <button id="numBut" type="button" class="btn btn-primary numBut" onclick="numButPress(9)">9</button>
+              <!-- operator button "+" with different id, class from bootstrap and from the mainstyle.css using different JS function -->
+              <button id="mathBut" type="button" class="btn btn-success mathBut" onclick="mathButPress('+')">+</button>
             </div>
         </div>
     </div>
