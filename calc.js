@@ -61,7 +61,37 @@ function mathButPress(operator){
 
 // function for reading the equal button pressed
 function equalButPress(num){
-
+    // reset decimal clicked flag
+    decimalClicked = false;
+    // convert string to numbers
+    prevVal = parseFloat(prevVal);
+    newVal = parseFloat(newVal);
+    // use switch-case method to perform different operations based on variable
+    switch(mathOperator){
+        // in case of "+" as math operator
+        case "+":
+            // run the addition
+            resultVal = prevVal + newVal;
+            // break from swith method
+            break;
+        case "-":
+            resultVal = prevVal - newVal;
+            break;
+        case "/":
+            resultVal = prevVal / newVal;
+            break;
+        case "*":
+            resultVal = prevVal * newVal;
+            break;
+        // in case none of the math operators have been clicked
+        default:
+            // leave everything as it is - display current value
+            resultVal = newVal;
+    }
+    // set prev value as the new result one
+    prevVal = resultVal;
+    // send result value to entry space
+    document.getElementById("entry").value = resultVal;
 }
 
 // function for clearing data from input area
