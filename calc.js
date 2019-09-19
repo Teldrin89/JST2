@@ -11,3 +11,33 @@ let resultVal = "";
 let decimalClicked = false;
 // memory stored value
 let valMemStored = "";
+
+// function for reading the number button pressed
+function numButPress(num){
+
+}
+
+// function for reading the math operator button pressed
+function mathButPress(operator){
+
+}
+
+// function for reading the equal button pressed
+function equalButPress(num){
+
+}
+
+// function for clearing data from input area
+function clearButPress(){
+
+}
+
+// function for copying number to memory
+function copyButPress(num){
+
+}
+
+// function to paste the number in memory
+function pasteButPress(num){
+
+}
