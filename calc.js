@@ -14,7 +14,27 @@ let valMemStored = "";
 
 // function for reading the number button pressed
 function numButPress(num){
-
+    // check if result value has somethign stored
+    if(resultVal){
+        // if there is value, set new value and reset result
+        newVal = num;
+        resultVal = "";
+    } else{
+        // if resutl value does not have a value, '===' check if the same value and type
+        if(num === '.'){
+            // if decimal was clicked only once in setting up entry value
+            if(decimalClicked != true){
+                // add the decimal part of the value
+                newVal += num;
+                // set the flag for decimal clicked
+                decimalClicked = true;
+            }
+        } else{
+            newVal += num;
+        }
+    }
+    // update entry with new value
+    document.getElementById("entry").value = newVal;
 }
 
 // function for reading the math operator button pressed
