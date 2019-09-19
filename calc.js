@@ -39,7 +39,24 @@ function numButPress(num){
 
 // function for reading the math operator button pressed
 function mathButPress(operator){
-
+    // check if result doesn't have a value
+    if(!resultVal){
+        // if there is no result then prev value is the new value
+        prevVal = newVal;
+    } else{
+        // if there is result previous value is the result value
+        prevVal = resultVal;
+    }
+    // reset new value
+    newVal = "";
+    // reset decimal cliked flag
+    decimalClicked = false;
+    // set math operator variable
+    mathOperator = operator;
+    // reset results value
+    resultVal = "";
+    // set entry space to empty
+    document.getElementById("entry").value = "";
 }
 
 // function for reading the equal button pressed
